@@ -82,7 +82,7 @@ Upon using **SkrillScaffold**, the following structure is generated:
 
 To generate a new microservice using SkrillScaffold:
 ```bash
-cookiecutter https://github.com/your-org/SkrillScaffold.git
+cookiecutter https://github.com/your-org/SkrillScaffold.git```
 
 Follow the prompts to provide:
 
