@@ -19,16 +19,31 @@ This repository is part of the ProfitPals microservices ecosystem, generated usi
 
 Each service in the ProfitPals ecosystem has a specific role, as shown below:
 
-| **Service**            | **Functionality**                                                                                         |
-|------------------------|---------------------------------------------------------------------------------------------------------|
-| **ValueVortex**         | ETL Tools: Ingest, clean, and prepare data for financial analysis.                                       |
-| **GreedGears**          | Machine Learning Models: Predictive analytics and signal generation.                                    |
-| **EquityEngine**        | Backtesting Framework: Simulates strategies using historical data.                                      |
-| **CapitalCatalyst**     | LLM Signal Integration: Extracts insights from financial reports, news, and sentiment analysis.         |
-| **RiskReducer**         | Risk Management: Tools for portfolio risk analysis and stop-loss strategies.                            |
-| **OpportunityOptimizer** | Feature Engineering: Automates feature creation and strategy optimization.                             |
-| **RevenueReactor**      | Reporting: Monitors live strategies and provides analytics dashboards.                                  |
-| **DollarDrive**         | Orchestrator: Centralized orchestration of all microservices.                                           |
+## **ProfitPals Microservices Overview**
+
+The ProfitPals ecosystem is composed of modular microservices, each with a specific functionality. Here is an overview of each service:
+
+| **Name**              | **Functionality**                                                                                         |
+|-----------------------|---------------------------------------------------------------------------------------------------------|
+| **ValueVortex**        | ETL Tools: Ingest, clean, and prepare data from various sources like market data, news, and 10-Ks.       |
+| **EquityEngine**       | Backtesting & Strategy Simulation: Test strategies on historical data with performance analytics.        |
+| **GreedGears**         | Machine Learning Models: Train and deploy ML models for predictive analytics and signal generation.      |
+| **ChartChurner**       | EDA & Visualization: Create visualizations, correlation matrices, and other exploratory tools.           |
+| **OpportunityOptimizer** | Feature Engineering & Strategy Tuning: Automate creation of features and tune strategies for optimal performance. |
+| **RiskReducer**        | Risk Management: Analyze and manage portfolio risk, stop-loss strategies, and position sizing.           |
+| **StochasticScreener** | Advanced stochastic risk analysis and daily strategy screening, integrating SHAP outputs for interpretability. |
+| **MoneyMill**          | Strategy Execution: Handles execution of trading strategies in real-time or simulated environments.      |
+| **CapitalCatalyst**    | LLM Signal Integration: Extract insights from 10-Ks, news, and analyst reports for decision-making.      |
+| **PortfolioProcessor** | Portfolio Optimization: Optimize allocation using tools like PyPortfolioOpt or ML-based strategies.      |
+| **RevenueReactor**     | Performance Monitoring & Reporting: Monitor live and backtested strategies and generate reports.         |
+| **FortuneFilter**      | Screening Tools: Screen stocks or assets based on user-defined filters or strategies.                    |
+| **DollarDriver**       | Orchestration & Pipeline Management: The orchestrator for the Kedro pipelines and microservices.         |
+| **ValueVault**         | Data Storage & Version Control: Central repository for datasets, models, and metadata.                   |
+
+---
+
+### **Notes**
+- **StochasticScreener** will integrate SHAP (SHapley Additive exPlanations) outputs from machine learning models to enhance interpretability, providing insights into feature importance for stochastic risk analysis and daily decision-making.
 
 ---
 
