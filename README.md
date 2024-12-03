@@ -42,6 +42,43 @@ The ProfitPals ecosystem is composed of modular microservices, each with a speci
 
 ---
 
+## **Interaction Diagram**
+
+```mermaid
+graph TD
+    subgraph DataPipeline
+        ValueVortex --> CapitalCatalyst
+        ValueVortex --> ChartChurner
+    end
+
+    subgraph StrategyDevelopment
+        ChartChurner --> OpportunityOptimizer
+        OpportunityOptimizer --> GreedGears
+        CapitalCatalyst --> GreedGears
+    end
+
+    subgraph RiskAndExecution
+        GreedGears --> StochasticScreener
+        StochasticScreener --> RiskReducer
+        RiskReducer --> MoneyMill
+    end
+
+    subgraph ReportingAndOptimization
+        MoneyMill --> RevenueReactor
+        RevenueReactor --> PortfolioProcessor
+    end
+
+    subgraph Orchestration
+        DollarDriver --> ValueVortex
+        DollarDriver --> GreedGears
+        DollarDriver --> RiskReducer
+    end
+
+    subgraph DataStorage
+        ValueVault --> allServices
+    end
+```
+
 ### **Notes**
 - **StochasticScreener** will integrate SHAP (SHapley Additive exPlanations) outputs from machine learning models to enhance interpretability, providing insights into feature importance for stochastic risk analysis and daily decision-making.
 
