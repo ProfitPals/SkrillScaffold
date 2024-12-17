@@ -1,0 +1,8 @@
+{
+    "project_name": "my_microservice",
+    "description": "A Flask-based microservice",
+    "author_name": "Your Name",
+    "version": "0.1.0",
+    "port": "5000"
+  }
+  
